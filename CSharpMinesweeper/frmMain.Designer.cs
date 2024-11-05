@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
+            pnlTop = new Panel();
             pctFlag = new PictureBox();
             lblFlagCount = new Label();
             pctMine = new PictureBox();
@@ -37,26 +37,27 @@
             cmbSize = new ComboBox();
             btnExit = new Button();
             pnlCanvas = new Panel();
-            panel1.SuspendLayout();
+            pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pctFlag).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pctMine).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // pnlTop
             // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel1.BackColor = Color.Khaki;
-            panel1.Controls.Add(pctFlag);
-            panel1.Controls.Add(lblFlagCount);
-            panel1.Controls.Add(pctMine);
-            panel1.Controls.Add(lblMineCount);
-            panel1.Controls.Add(btnStart);
-            panel1.Controls.Add(cmbSize);
-            panel1.Controls.Add(btnExit);
-            panel1.Location = new Point(5, 5);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(640, 30);
-            panel1.TabIndex = 0;
+            pnlTop.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnlTop.BackColor = Color.Khaki;
+            pnlTop.Controls.Add(pctFlag);
+            pnlTop.Controls.Add(lblFlagCount);
+            pnlTop.Controls.Add(pctMine);
+            pnlTop.Controls.Add(lblMineCount);
+            pnlTop.Controls.Add(btnStart);
+            pnlTop.Controls.Add(cmbSize);
+            pnlTop.Controls.Add(btnExit);
+            pnlTop.Location = new Point(5, 5);
+            pnlTop.Name = "pnlTop";
+            pnlTop.Size = new Size(640, 30);
+            pnlTop.TabIndex = 0;
+            pnlTop.MouseDown += pnlTop_MouseDown;
             // 
             // pctFlag
             // 
@@ -154,14 +155,14 @@
             BackColor = Color.Gainsboro;
             ClientSize = new Size(650, 685);
             Controls.Add(pnlCanvas);
-            Controls.Add(panel1);
+            Controls.Add(pnlTop);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Minesweeper";
             Load += frmMain_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            pnlTop.ResumeLayout(false);
+            pnlTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pctFlag).EndInit();
             ((System.ComponentModel.ISupportInitialize)pctMine).EndInit();
             ResumeLayout(false);
@@ -169,7 +170,7 @@
 
         #endregion
 
-        private Panel panel1;
+        private Panel pnlTop;
         private Panel pnlCanvas;
         private Button btnStart;
         private ComboBox cmbSize;
