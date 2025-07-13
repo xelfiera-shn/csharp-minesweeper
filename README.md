@@ -1,7 +1,13 @@
-# CSharpMinesweeper
+# C# Minesweeper
 
-Classic snake game developed in C#.
+Classic minesweeper game written in C#, WinForms based.
 
-![Project Screenshot1](Screenshot1.png)
+![Screenshot1](Screenshot1.png)
 
-![Project Screenshot2](Screenshot2.png)
+![Screenshot2](Screenshot2.png)
+
+```bash
+   git clone https://github.com/xelfiera-shn/csharp-minesweeper.git
+   ```
+
+---
